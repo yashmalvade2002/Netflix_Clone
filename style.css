@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+width:150px;
+cursor: pointer;
+}
+nav button{
+    border:0;
+    outline:0;
+    background: #db0001;
+    color:#fff;
+    padding:7px 20px;
+    font-size:12px;
+    border-radius:4px;
+    margin-left:10px;
+    cursor: pointer;
+}
+.language-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+.language-btn img{
+    width:10px;
+    margin-left: 10px;
+}
+.header-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+     max-width: 650px;
+}
+
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+.email-signup{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: centre;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+.email-signup button{
+    background: #db0001;
+    border:0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width:100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis:50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis:50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: flex;
+    width: 90%;
+ margin: auto;
+}
+.feature h2{
+    font-size:50px;
+font-weight:600;
+margin-bottom: 20px;
+}
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+}
+.accordion{
+    margin:60px auto;
+    width:100%;
+    max-width: 750px;
+}
+.accordion li{
+list-style: none;
+width:100%;
+padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items:center;
+    padding: 20px;
+    font-size:18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor:pointer;
+    position: relative;
+}
+label::after{
+    content:'+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5 sec;
+}
+input[type="radio"]{
+display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+}
+.accordion input[type="radio"]:checked+label+.content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked+label::after{
+    transform: rotate(135deg);
+}
+.faq .email-signup{
+    max-width: 600px;
+    margin:20px auto 60px;
+}
+.faq small{
+    font-size13px;
+}
+.footer{
+    padding:50px 15% 10px;
+    border-top:6px solid #333;
+    color: #777;
+}
+/* Basic styling for links */
+a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Set link color */
+    transition: color 0.3s ease; /* Add smooth color transition */
+  }
+  
+  /* Change link color on hover */
+  a:hover {
+    color: #007BFF; /* Change color on hover */
+  }
+  
+  /* Style for phone number */
+  a.phone-number {
+    color: #28a745; /* Green color for phone number */
+  }
+  
+  /* Style for highlighted links */
+  a.highlight {
+    color: #dc3545; /* Red color for highlighted links */
+  }
+  
+  /* Additional styling for navigation or footer links */
+  .nav-link,
+  .footer-link {
+    margin-right: 20px; /* Add some spacing between links */
+  }
+  
+  /* Example of styling for buttons */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Style for headings (assuming these are section headings) */
+  h2 {
+    color: #007BFF;
+  }
+  a {
+    margin-bottom: 10px; /* Adjust the value as needed */
+    display: block; /* Ensure each link appears on a new line */
+  }
+  
+  /* Example for adding space specifically for FAQ, Investor Relations, etc. */
+  a.highlight {
+    margin-bottom: 20px; /* Adjust the value as needed */
+  }
